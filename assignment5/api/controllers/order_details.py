@@ -36,3 +36,4 @@ def delete(db: Session, order_detail_id):
     db_order_detail.delete(synchronize_session=False)
     db.commit()
     return Response(status_code=status.HTTP_204_NO_CONTENT)
+
